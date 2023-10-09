@@ -1,0 +1,20 @@
+@use"../abstracts/variables"as*;
+
+.btn-main{
+    border: none;
+    border: 1px solid $main-color;
+    background-color: $main-color;
+    padding: 10px 25px;
+    border-radius: 5px;
+    transition: all .3s ease;
+    &:hover{
+        border: 1px solid $main-color;
+        background-color: $secondary-color;
+        color: #fff;
+    }
+    a{
+        color: #fff;
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+}

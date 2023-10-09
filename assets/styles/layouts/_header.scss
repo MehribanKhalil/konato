@@ -1,0 +1,27 @@
+@use '../components/button'as*;
+
+#header{
+    height: 100vh;
+    .header-content{
+        background:  linear-gradient(to right, rgba(1, 29, 51,0.6), rgba(255, 255, 255, 0)),
+        url(https://preview.colorlib.com/theme/konato/assets/img/hero/h1_hero1.jpg.webp) ;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: #fff;
+        display: flex;
+        align-items: center;
+
+
+        p{
+            font-size: 1.2rem;
+        }
+
+        span{
+            display: block;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+    }
+}

@@ -1,0 +1,94 @@
+@use '../abstracts/variables'as*;
+
+
+
+#navbar{
+    background-color: $secondary-color;
+    position: sticky;
+    z-index: 23;
+    top: 0;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // padding: 20px 0;
+
+        .nav-left{
+            align-items: center;
+
+            ul li a{
+                    display: block;
+                    color: #fff;
+                    padding-left: 30px;
+                    font-size: 1.3rem;
+                    padding: 20px;
+
+                   &:hover{
+                    color: $main-color;
+                   } 
+            }
+
+            ul li::after{
+                content: "";
+                background-color:$main-color;
+                display: block;
+                width: 0%;
+                height: 2px;
+                margin: auto;
+                transition: 0.4s;
+            }
+            ul li:hover:after{
+                width: 100%;
+            }
+            
+            
+            
+        }
+
+        .nav-right{
+            a{
+                font-size: 1.1rem;
+                color: #fff;
+                span{
+                    border-bottom: 1px dotted #fff;
+                }
+            }
+
+            button{
+                border:1px solid $main-color ;
+                background-color: $main-color;
+                padding: 10px 25px;
+                border-radius: 5px;
+                transition: all .3s ease;
+                &:hover{
+                    border: 1px solid $main-color;
+                    background-color: transparent;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    
+}
+
+
+@media screen and (max-width:1200px){
+    .nav-right>a{
+        
+           display: none;
+
+    }
+}
+
+@media screen and (max-width:992px){
+    .nav-right>a{
+        
+           display: none;
+
+    }
+
+    .nav-left ul li{
+        display: none;
+    }
+}
